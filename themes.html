@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>থিমসমূহ - App Firebase</title>
+    <meta name="description" content="App Firebase-এর জন্য উপলব্ধ সমস্ত আকর্ষণীয় থিমগুলো দেখুন। আপনার অ্যাপের চেহারা পরিবর্তন করুন এবং একটি নতুন ভিজ্যুয়াল অভিজ্ঞতা উপভোগ করুন।">
+    <meta name="keywords" content="themes, app themes, zikir app themes, customization, ui, ux, app design">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <h1>আমাদের থিমসমূহ</h1>
+            <p>আপনার অ্যাপকে সাজিয়ে তুলুন নতুন সব আকর্ষণীয় থিম দিয়ে</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="themes-section full-themes-page">
+            <div class="container">
+                <div id="themes-grid-full" class="themes-grid">
+                    <div class="spinner-container">
+                        <div class="spinner"></div>
+                    </div>
+                    <!-- All theme cards will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="index.html" class="footer-link">হোম পেজে ফিরে যান</a>
+            <a href="privacy.html" class="footer-link" style="margin-left: 15px;">গোপনীয়তা নীতি</a>
+            <p>&copy; 2025 App Firebase. সর্বস্বত্ব সংরক্ষিত।</p>
+            <button id="subscribeButton" class="cta-button" style="margin-left: 15px; padding: 8px 15px; font-size: 0.9rem;">নোটিফিকেশন চালু করুন</button>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

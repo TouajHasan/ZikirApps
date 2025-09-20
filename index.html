@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Firebase - আপনার আধ্যাত্মিক সঙ্গী</title>
+    <meta name="description" content="App Firebase, আপনার দৈনিক যিকির, নামাজ এবং আধ্যাত্মিক অভ্যাস ট্র্যাক করার জন্য একটি আধুনিক গেমিফাইড মোবাইল অ্যাপ। এখনই ডাউনলোড করুন এবং আপনার আধ্যাত্মিক যাত্রাকে নতুন স্তরে নিয়ে যান।">
+    <meta name="keywords" content="zikir, namaz, prayer, islam, muslim, spiritual, tracker, gamification, flutter, firebase, zikir app, namaz tracker">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <h1>App Firebase</h1>
+            <p>আপনার দৈনিক ধর্মীয় অনুশীলন ট্র্যাক করার জন্য একটি আধুনিক অ্যাপ</p>
+            <a href="#" id="download-button" class="cta-button">এখনি ডাউনলোড করুন</a>
+            <span id="version-info"></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="features-section">
+            <div class="container">
+                <h2>প্রধান ফিচারসমূহ</h2>
+                <div class="features-grid">
+                    <div class="feature-card hidden-on-scroll">
+                        <h3>গেমিফিকেশন</h3>
+                        <p>XP, লেভেল, ও ব্যাজ অর্জন করে আপনার অগ্রগতি ট্র্যাক করুন।</p>
+                    </div>
+                    <div class="feature-card hidden-on-scroll">
+                        <h3>লিডারবোর্ড</h3>
+                        <p>অন্যান্য ব্যবহারকারীদের সাথে আপনার অগ্রগতি তুলনা করুন।</p>
+                    </div>
+                    <div class="feature-card hidden-on-scroll">
+                        <h3>থিম শপ</h3>
+                        <p>ইন-অ্যাপ কারেন্সি দিয়ে নতুন থিম আনলক করুন।</p>
+                    </div>
+                    <div class="feature-card hidden-on-scroll">
+                        <h3>দৈনিক ট্র্যাকিং</h3>
+                        <p>আপনার দৈনিক যিকির ও নামাজের হিসাব রাখুন।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="themes-section">
+            <div class="container">
+                <h2>আমাদের থিমসমূহ</h2>
+                <div id="themes-grid" class="themes-grid">
+                    <div class="spinner-container">
+                        <div class="spinner"></div>
+                    </div>
+                    <!-- Theme images will be loaded here by JavaScript -->
+                </div>
+                <div class="view-all-container">
+                    <a href="themes.html" class="cta-button">সকল থিম দেখুন</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <h2>অ্যাপ গ্যালারি</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item hidden-on-scroll"><img src="assets/Screenshot_1.png" alt="অ্যাপ স্ক্রিনশট ১"></div>
+                    <div class="gallery-item hidden-on-scroll"><img src="assets/Screenshot_2.png" alt="অ্যাপ স্ক্রিনশট ২"></div>
+                    <div class="gallery-item hidden-on-scroll"><img src="assets/Screenshot_3.png" alt="অ্যাপ স্ক্রিনশট ৩"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>সচরাচর জিজ্ঞাস্য</h2>
+                <div class="faq-accordion">
+                    <div class="faq-item hidden-on-scroll">
+                        <button class="faq-question">
+                            <span>এই অ্যাপটি কি বিনামূল্যে ব্যবহার করা যায়?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>হ্যাঁ, অ্যাপটির মূল ফিচারগুলো সম্পূর্ণ বিনামূল্যে ব্যবহার করা যায়। তবে, কিছু বিশেষ থিম এবং অতিরিক্ত সুবিধার জন্য ইন-অ্যাপ কারেন্সি প্রয়োজন হতে পারে, যা আপনি অ্যাপ ব্যবহার করার মাধ্যমে অর্জন করতে পারবেন।</p>
+                        </div>
+                    </div>
+                    <div class="faq-item hidden-on-scroll">
+                        <button class="faq-question">
+                            <span>আমার ডেটা কি সুরক্ষিত?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>আপনার তথ্যের গোপনীয়তা আমাদের কাছে অত্যন্ত গুরুত্বপূর্ণ। আপনার সমস্ত ডেটা নিরাপদে Firebase-এর সার্ভারে সংরক্ষণ করা হয় এবং আমরা কোনো ব্যক্তিগত তথ্য তৃতীয় পক্ষের সাথে শেয়ার করি না।</p>
+                        </div>
+                    </div>
+                    <div class="faq-item hidden-on-scroll">
+                        <button class="faq-question">
+                            <span>গেমিফিকেশন ফিচারটি কীভাবে কাজ করে?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>আপনি যখন দৈনিক যিকির, নামাজ এবং অন্যান্য কাজ সম্পন্ন করবেন, তখন আপনি XP (Experience Points) অর্জন করবেন। নির্দিষ্ট পরিমাণ XP অর্জনের পর আপনার লেভেল বাড়বে এবং আপনি পুরস্কার হিসেবে টোকেন বা ডায়মন্ড পাবেন। এছাড়া, নির্দিষ্ট মাইলস্টোন পূর্ণ করলে আপনি বিশেষ ব্যাজ আনলক করতে পারবেন।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>ব্যবহারকারীরা যা বলেন</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card hidden-on-scroll">
+                        <p class="testimonial-quote">"এই অ্যাপটি আমার দৈনিক আমলগুলো ট্র্যাক করতে অসাধারণ সাহায্য করেছে। এর গেমিফিকেশন সিস্টেম আমাকে প্রতিদিন যিকির করতে উৎসাহিত করে।"</p>
+                        <div class="testimonial-author">
+                            <img src="assets/profile-placeholder.png" alt="ব্যবহারকারীর ছবি">
+                            <span> - আব্দুল্লাহ আল মাহমুদ</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card hidden-on-scroll">
+                        <p class="testimonial-quote">"থিম শপ ফিচারটি আমার খুবই ভালো লেগেছে। নিজের পছন্দের থিম ব্যবহার করে অ্যাপটি চালাতে অন্যরকম আনন্দ পাই।"</p>
+                        <div class="testimonial-author">
+                            <img src="assets/profile-placeholder.png" alt="ব্যবহারকারীর ছবি">
+                            <span> - ফাতিমা আক্তার</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card hidden-on-scroll">
+                        <p class="testimonial-quote">"লিডারবোর্ডের কারণে বন্ধুদের সাথে একটা সুস্থ প্রতিযোগিতা কাজ করে। কে কত বেশি XP অর্জন করল, তা দেখতে বেশ ভালো লাগে।"</p>
+                        <div class="testimonial-author">
+                            <img src="assets/profile-placeholder.png" alt="ব্যবহারকারীর ছবি">
+                            <span> - മുഹമ്മദ് ইব্রাহিম</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta-section">
+            <div class="container">
+                <h2>প্রস্তুত?</h2>
+                <p>আজই আপনার আধ্যাত্মিক যাত্রা শুরু করুন।</p>
+                <a href="#" id="final-download-button" class="cta-button">এখনি ডাউনলোড করুন</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- The Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <a href="#" id="back-to-top-btn" title="উপরে যান">&#8679;</a>
+
+    <footer>
+        <div class="container">
+            <a href="developer.html" class="footer-link">ডেভেলপার পরিচিতি</a>
+            <a href="privacy.html" class="footer-link" style="margin-left: 15px;">গোপনীয়তা নীতি</a>
+            <p>&copy; 2025 App Firebase. সর্বস্বত্ব সংরক্ষিত।</p>
+            <button id="subscribeButton" class="cta-button"
+                style="margin-left: 15px; padding: 8px 15px; font-size: 0.9rem;">নোটিফিকেশন চালু করুন</button>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
